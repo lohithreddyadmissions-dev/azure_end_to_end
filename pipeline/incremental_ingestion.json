@@ -116,14 +116,11 @@
 						}
 					},
 					"dataset": {
-						"referenceName": "json_dynamic",
+						"referenceName": "Json1",
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "bronze",
-							"folder": {
-								"value": "@concat(pipeline().parameters.table,'_cdc')",
-								"type": "Expression"
-							},
+							"folder": "@concat(item().table,'_cdc')",
 							"file": "cdc.json"
 						}
 					},
