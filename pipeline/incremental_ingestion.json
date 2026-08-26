@@ -120,7 +120,10 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"container": "bronze",
-							"folder": "cdc",
+							"folder": {
+								"value": "@concat(pipeline().parameters.table,'_cdc')",
+								"type": "Expression"
+							},
 							"file": "cdc.json"
 						}
 					},
