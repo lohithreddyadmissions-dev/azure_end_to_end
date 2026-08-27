@@ -130,6 +130,18 @@
 										"type": "JsonReadSettings"
 									}
 								},
+								"dataset": {
+									"referenceName": "Json1",
+									"type": "DatasetReference",
+									"parameters": {
+										"container": "bronze",
+										"folder": {
+											"value": "@concat(item().table,'_cdc')",
+											"type": "Expression"
+										},
+										"file": "cdc.json"
+									}
+								},
 								"firstRowOnly": false
 							}
 						},
