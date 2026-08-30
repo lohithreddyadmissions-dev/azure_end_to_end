@@ -12,7 +12,7 @@
 						"value": "@pipeline().parameters.file_names",
 						"type": "Expression"
 					},
-					"isSequential": true,
+					"isSequential": false,
 					"activities": [
 						{
 							"name": "Copy data1",
